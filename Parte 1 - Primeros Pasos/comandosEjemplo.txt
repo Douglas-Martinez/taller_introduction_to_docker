@@ -1,0 +1,9 @@
+# Ejemplo Inicial hello-world
+sudo docker run hello-world
+
+# Ejemplo Tamaño de Imagenes
+sudo docker pull python
+sudo docker pull python:alpine
+
+# Ejemplo de uso de contendor con Microsoft SQL Server 2019
+sudo docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=password_Super_Fuerte" --name sqlserver -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
