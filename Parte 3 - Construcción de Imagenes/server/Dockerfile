@@ -2,7 +2,9 @@ FROM golang:alpine
 WORKDIR /go/src/app
 COPY main.go .
 RUN go mod init
-RUN go mod tidy
-RUN go build 
+RUN go mod tidy 
+CMD ["go","run","main.go"]
 
-CMD ["./app"]
+# Producción
+# RUN go build
+# CMD ["./app"]
