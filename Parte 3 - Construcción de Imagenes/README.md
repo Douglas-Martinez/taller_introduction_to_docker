@@ -40,7 +40,7 @@ sudo docker login
 
 Una vez nos hemos logueado a Docker Hub tenemos la posibilidad de subir imagenes a nuestra cuenta, para hacerlo primero debemos de haber creado una imagen y utilizar el comando `docker tag` para taguear la imagen local con nuestro usuario y el repositorio en la nube.
 ```
-sudo docker tag usuarioDockerHub/nombreImagen:tag
+sudo docker tag imagenOrigen usuarioDockerHub/nombreImagenDestino:tag
 ```
 
 Una vez hecho esto podemos subirla al repositorio con el comando:
