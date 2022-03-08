@@ -1,0 +1,12 @@
+version: "3.1"
+services:
+  servertaller:
+    image: servercompose
+    restart: always
+    ports:
+      - 8080:8080
+  clientetaller:
+    image: clientecompose
+    restart: always
+    ports:
+      - 3100:3000
